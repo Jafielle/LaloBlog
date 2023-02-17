@@ -1,2 +1,36 @@
 /* font-family: 'Permanent Marker', cursive;
 font-family: 'Roboto', sans-serif; */
+
+*{
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      scroll-padding-top: 2rem; /**/
+      box-sizing: border-box; /**/
+}
+
+/*
+:root {
+      --container-color: ;
+      --second-color: ;
+      --text-color: ;
+      --bg-color: ;
+}
+*/
+
+a{
+      text-decoration: none;
+}
+
+li{
+      list-style: none;
+}
+
+img{
+      width: 100%;
+}
+
+section{
+      padding: 3rem 0 2rem;
+}
