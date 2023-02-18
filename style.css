@@ -8,6 +8,7 @@ font-family: 'Roboto', sans-serif; */
       scroll-behavior: smooth;
       scroll-padding-top: 2rem; /**/
       box-sizing: border-box; /**/
+      color: #353535;
 }
 
 /*
@@ -17,6 +18,8 @@ font-family: 'Roboto', sans-serif; */
       --text-color: ;
       --bg-color: ;
 }
+
+::selection ?
 */
 
 a{
@@ -24,7 +27,7 @@ a{
 }
 
 li{
-      list-style: none;
+      list-style: none; 
 }
 
 img{
@@ -34,3 +37,92 @@ img{
 section{
       padding: 3rem 0 2rem;
 }
+
+/*.container{
+margin: auto;
+}
+*/
+
+header{
+      position: fixed; /*maybe sticky or maybe hidden until 1rf atricle*/
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 5;
+      background-color: #353535;
+}
+
+nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+      background-color: #353535;
+}
+
+.logo{
+      font-size: 1.5rem;
+      font-weight: 700;/*900*/
+      color: #2c9c60;
+}
+
+.logo span{
+      color: #2971a1;
+}
+
+.login{
+      padding: 8px 15px;
+      font-weight: 500;
+      border-radius: 5px;
+      background-color: #2d556f;
+      color: #d9d9d9;
+}
+
+.login:hover{
+      background: #427d69;
+      transition: 0.3s;
+      color: white;
+}
+
+h1, h2{
+      font-family: 'Permanent Marker', cursive;
+}
+.home{
+      min-height: 20%;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+}
+
+
+h1{
+      color: white;
+      font-size: 3.5rem;
+      font-weight: 200;
+      padding: 1rem;
+}
+
+h3{
+font-size: 1rem;
+font-weight: 400;
+}
+
+.home-subtitle{
+      color: white;
+}
+
+
+/*palette
+#353535 rgb(53, 53, 53) color jet dark grey
+
+427d69 rgb(66, 125, 105) green color
+
+white
+
+d9d9d9  rgb(217, 217, 217) platinium a grey
+
+2d556f rgb(45, 85, 111) YInMn Blue  a dark blue
+
+https://coolors.co/353535-427d69-ffffff-d9d9d9-2d556f
+*/
