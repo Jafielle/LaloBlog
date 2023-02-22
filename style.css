@@ -143,6 +143,14 @@ p{
 }
 
 
+.post{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+      justify-content: center;
+      gap: 1.5rem;
+}
+
+
 /*palette
 #353535 rgb(53, 53, 53) color jet dark grey
 
@@ -156,5 +164,5 @@ d9d9d9  rgb(217, 217, 217) platinium a grey
 
 https://coolors.co/353535-427d69-ffffff-d9d9d9-2d556f
 
-1421
+1421  1813
 */
