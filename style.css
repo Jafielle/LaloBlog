@@ -144,12 +144,25 @@ p{
 
 
 .post{
+      
+      background-image: url(https://images.unsplash.com/photo-1676170119964-49af9bce969f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+      background-size: cover;
+      
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, auto));
-      justify-content: center;
-      gap: 1.5rem;
+      justify-content: space-between;
+      gap: 2rem;
+      margin: 1.5rem;
+      padding: 1rem;
+      border-radius: 5px;
 }
 
+.post-box{
+      background: #d9d9d9;
+      box-shadow: 50px 50px 50px #0000;/**/
+      padding: 15px;
+      border-radius: 0.5rem;
+}
 
 /*palette
 #353535 rgb(53, 53, 53) color jet dark grey
