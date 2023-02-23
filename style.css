@@ -55,7 +55,7 @@ nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 1rem;
+      padding: 0.5rem 1rem;
       background-color: #353535;
 }
 
@@ -68,7 +68,24 @@ nav {
 
 .logo span {
       color: #2971a1;
+      position: relative;
+      z-index: 2;
 }
+
+.logo-img {
+      width: 90px;
+      height: 110px;
+      display: block;
+      margin-bottom: -30px;
+      filter:
+      sepia(1) saturate(1) hue-rotate(183deg) brightness(1);
+}
+
+.logo-img:hover {
+      filter:
+      sepia(1) saturate(20) hue-rotate(183deg) brightness(0.65);
+}
+
 
 .login {
       padding: 8px 15px;
@@ -89,10 +106,10 @@ h1 {
       color: white;
       font-size: 3.5rem;
       font-weight: 200;
-      padding: 1rem;
+      padding: 1.5rem;
 }
 
-h2{
+h2 {
       font-size: 1.5rem;
       font-weight: 300;
 }
@@ -138,14 +155,14 @@ h3 {
 
 }
 
-p{
+p {
       font-size: 1rem;
       font-weight: 300;
       padding: 1rem 0;
 }
 
 
-.post{
+.post {
       background-image: url(https://images.unsplash.com/photo-1543362906-acfc16c67564?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80);
       background-size: cover;
       display: grid;
@@ -158,22 +175,25 @@ p{
       border-radius: 5px;
 }
 
-.post-box{
+.post-box {
       background: #f1eeee;
-      box-shadow: -3px 9px 10px #353535;/**/
+      box-shadow: -3px 9px 10px #353535;
+      /**/
       padding: 15px;
       border-radius: 0.5rem;
 }
 
-.post-box:nth-of-type(3n+2){
-      box-shadow: 0px 9px 10px #353535;/**/
+.post-box:nth-of-type(3n+2) {
+      box-shadow: 0px 9px 10px #353535;
+      /**/
 }
 
-.post-box:nth-of-type(3n){
-      box-shadow: 3px 9px 10px #353535;/**/
+.post-box:nth-of-type(3n) {
+      box-shadow: 3px 9px 10px #353535;
+      /**/
 }
 
-.post-title{
+.post-title {
       color: #2971a1;
       padding: 0.5rem 0;
 }
