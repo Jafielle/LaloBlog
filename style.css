@@ -84,16 +84,17 @@ nav {
       color: white;
 }
 
-h1,
-h2 {
-      font-family: 'Permanent Marker', cursive;
-}
-
 h1 {
+      font-family: 'Permanent Marker', cursive;
       color: white;
       font-size: 3.5rem;
       font-weight: 200;
       padding: 1rem;
+}
+
+h2{
+      font-size: 1.5rem;
+      font-weight: 300;
 }
 
 h3 {
@@ -120,7 +121,7 @@ h3 {
       justify-content: center;
       align-items: center;
       column-gap: 1.5rem;
-      margin-top: 2rem;
+      margin: 2rem;
 }
 
 .filter-item {
@@ -140,28 +141,33 @@ h3 {
 p{
       font-size: 1rem;
       font-weight: 300;
+      padding: 1rem 0;
 }
 
 
 .post{
-      
-      background-image: url(https://images.unsplash.com/photo-1676170119964-49af9bce969f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+      background-image: url(https://images.unsplash.com/photo-1543362906-acfc16c67564?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80);
       background-size: cover;
-      
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, auto));
-      justify-content: space-between;
+      /*grid-template-columns: repeat(auto-fit, minmax(25%, auto));*/
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: center;
       gap: 2rem;
-      margin: 1.5rem;
+      margin: 1.5rem 5rem;
       padding: 1rem;
       border-radius: 5px;
 }
 
 .post-box{
-      background: #d9d9d9;
-      box-shadow: 50px 50px 50px #0000;/**/
+      background: #f1eeee;
+      box-shadow: -3px 9px 10px #353535;/**/
       padding: 15px;
       border-radius: 0.5rem;
+}
+
+.post-title{
+      color: #2971a1;
+      padding: 0.5rem 0;
 }
 
 /*palette
