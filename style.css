@@ -184,6 +184,11 @@ p {
       /**/
       padding: 15px;
       border-radius: 0.5rem;
+      display: none;
+}
+
+.show{
+      display: block;
 }
 
 .post-box:nth-of-type(3n+2) {
