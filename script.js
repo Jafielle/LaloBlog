@@ -1,15 +1,15 @@
 //alert('Conected')
 
-filterObjects("all")
-
-function filterObjects(c){
+//filterObjects("all")
+function filterObjects(filter) {
       let i;
-      let x = document.getElementsByClassName("post-box");
-      if(c == "all") c == "";
-      for (i = 0; i < x.length; i++){
-            removeClass(x[i], "show");
-            if(x[i].className.indexOf(c) > -1)addClass(x[i], "show")
+      let postBox = document.getElementsByClassName("post-box");
+      if (filter == "");
+      for (i = 0; i < postBox.length; i++) {
+            removeClass(postBox[i], "show");
+            if (postBox[i].className.indexOf(filter) > -1) addClass(postBox[i], "show")
       }
+
 }
 
 function addClass(element, name) {
@@ -37,3 +37,9 @@ function removeClass(element, name) {
       element.className = arr1.join(" ")
 }
 
+
+
+// active btn
+$(".filter-item").click(function () {
+      $(this).addClass("active-filter").siblings().removeClass("active-filter");
+})
