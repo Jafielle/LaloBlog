@@ -145,6 +145,8 @@ h3 {
       font-size: 0.9rem;
       font-weight: 500;
       cursor: pointer;
+      border: none;
+      background-color: transparent;
 }
 
 .active-filter {
@@ -312,6 +314,16 @@ p {
       padding-left: 1.5rem;
 }
 
+/*another method*/
+.post .expand {
+      width: 25em;
+      margin: 1em;
+}
+
+.post .shrink {
+      width: 0;
+      margin: -1em;
+}
 
 /*palette
 #353535 rgb(53, 53, 53) color jet dark grey
