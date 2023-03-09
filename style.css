@@ -13,17 +13,6 @@ font-family: 'Roboto', sans-serif; */
       color: #353535;
 }
 
-/*
-:root {
-      --container-color: ;
-      --second-color: ;
-      --text-color: ;
-      --bg-color: ;
-}
-
-::selection ?
-*/
-
 a {
       text-decoration: none;
 }
@@ -36,10 +25,6 @@ img {
       width: 100%;
 }
 
-/*.container{
-margin: auto;
-}
-*/
 
 header {
       background-color: #353535;
@@ -164,7 +149,7 @@ p {
 }
 
 
-.post {
+.posts {
       background-image: url(https://images.unsplash.com/photo-1543362906-acfc16c67564?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80);
       /*background-attachment: fixed;*/
       background-position: center;
@@ -186,12 +171,17 @@ p {
       /**/
       padding: 15px;
       border-radius: 0.5rem;
+}
+
+.posts .expand {
+      width: 25em;
+      margin: 1em;
+}
+
+.posts .hide {
       display: none;
 }
 
-.show{
-      display: block;
-}
 
 .post-box:nth-of-type(3n+2) {
       box-shadow: 0px 9px 10px #353535;
@@ -314,16 +304,6 @@ p {
       padding-left: 1.5rem;
 }
 
-/*another method*/
-.post .expand {
-      width: 25em;
-      margin: 1em;
-}
-
-.post .shrink {
-      width: 0;
-      margin: -1em;
-}
 
 /*palette
 #353535 rgb(53, 53, 53) color jet dark grey

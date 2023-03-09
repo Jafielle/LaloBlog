@@ -1,91 +1,62 @@
 //alert('Conected')
 
-/*
-//filterObjects("all")
-function filterObjects(filter) {
-      let i;
-      let postBox = document.getElementsByClassName("post-box");
-      if (filter == "");
-      for (i = 0; i < postBox.length; i++) {
-            removeClass(postBox[i], "show");
-            if (postBox[i].className.indexOf(filter) > -1) addClass(postBox[i], "show")
-      }
+//Getting Elements from DOM
+const FilterBtns = document.querySelectorAll('.post-filter button');
 
+const post = document.querySelectorAll('.posts div');
+
+//Adding a click event to all buttons
+for (let i = 1; i < FilterBtns.length; i++) {
+      FilterBtns[i].addEventListener('click', filterPost);
 }
 
-function addClass(element, name) {
-      let i;
-      let arr1 = element.className.split(" ");
-      let arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-            if (arr1.indexOf(arr2[i]) == -1) {
-                  element.className += " " + arr2[i]
-            }
-      }
-
-}
-
-
-function removeClass(element, name) {
-      let i;
-      let arr1 = element.className.split(" ");
-      let arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-            while (arr1.indexOf(arr2[i]) > -1) {
-                  arr1.splice(arr1.indexOf(arr2[i]), 1);
-            }
-      }
-      element.className = arr1.join(" ")
-}
-
-
-
-// active btn
-$(".filter-item").click(function () {
-      $(this).addClass("active-filter").siblings().removeClass("active-filter");
-})
-
-*/
-
-const filterBtn = document.getElementsByClassName("filter-item");
-
-const postBox = document.getElementsByClassName("post-box");
-
-for (let i = 1; i < filterBtn.length; i++) {
-      btns[i].addEventListener('click', filterImg);
-}
-
+//Setting active button on click
 function setActiveBtn(e) {
-
-      btns.forEach(btn => {
+      //Removing active class from all post-filter buttons
+      FilterBtns.forEach(btn => {
             btn.classList.remove('active-filter');
       });
 
+      //Addding active class to clicked button
       e.target.classList.add('active-filter');
 }
 
-
-function filterImg(e) {
+//Filtering posts
+function filterPost(e) {
+      //Running the active button function
       setActiveBtn(e);
 
-      postBox.forEach(post => {
-            post.classList.remove('img-shrink');
-            post.classList.add('img-expand');
+      //Looping through all posts
+      post.forEach(div => {
+
+            div.classList.remove('hide');
+            div.classList.add('expand');
 
             //Get data from data attributes
-            //Get image type data
-            const imgType = parseInt(img.dataset.img);
-            //Get button type data
+            //...post type data
+            const imgType = parseInt(div.dataset.post);
+            //...button type data
             const btnType = parseInt(e.target.dataset.btn);
 
-            /*
-            If the image type and the type of the clicked button are NOT the same
-            */
+            //If post type different than clicked post-filter button type
 
             if (imgType !== btnType) {
                   //Hide the image
-                  post.classList.remove('expand');
-                  post.classList.add('shrink');
+                  div.classList.remove('expand');
+                  div.classList.add('hide');
             }
       })
 }
+
+//Setting click event for 'All' post-filter button
+FilterBtns[0].addEventListener('click', (e) => {
+      //Running the active button function
+      setActiveBtn(e);
+      //Looping through all posts
+      post.forEach(div => {
+            //Expandig all posts
+            div.classList.remove('hide');
+            div.classList.add('expand');
+      })
+})
+
