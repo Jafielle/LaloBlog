@@ -44,6 +44,12 @@ nav {
       background-color: #353535;
 }
 
+nav.shadow {
+      background: #2b3439;
+      box-shadow: 10px 12px 14px hsl(0 4% 14% / 10%);
+      transition: 0.3s;
+}
+
 .logo {
       font-size: 1.5rem;
       font-weight: 700;
@@ -263,7 +269,7 @@ p {
 
       border-radius: 50%;
 
-      
+
 
       /*justify-content: center;
       align-items: center;*/
@@ -285,7 +291,7 @@ p {
       grid-column-end: 6;
 
       align-content: center;
-      align-self:flex-end;
+      align-self: flex-end;
 
       padding-left: 1.5rem;
 }
@@ -299,7 +305,7 @@ p {
       grid-column-end: 6;
 
       align-content: center;
-      align-self:flex-start;
+      align-self: flex-start;
 
       padding-left: 1.5rem;
 }

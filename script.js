@@ -60,3 +60,12 @@ FilterBtns[0].addEventListener('click', (e) => {
       })
 })
 
+
+//Nav Change on Scroll
+let nav = document.querySelector('nav')
+
+
+window.addEventListener('scroll', () => {
+      
+      nav.classList.toggle('shadow', window.scrollY > 0);
+})
