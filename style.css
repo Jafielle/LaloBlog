@@ -311,6 +311,32 @@ p {
 }
 
 
+.footer{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 30px 0;
+}
+
+.footer p{
+      font-size: 0.95rem;
+}
+
+.social{
+      display: flex;
+      align-items: center;
+      column-gap: 1rem;
+}
+
+.social .bx{
+      font-size: 1.4rem;
+      color:#2d556f;
+}
+
+.social .bx:hover{
+      color: #2c9c60;
+      transition: 0.3s all linear;
+}
 /*palette
 #353535 rgb(53, 53, 53) color jet dark grey
 
