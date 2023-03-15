@@ -72,9 +72,27 @@ nav.shadow {
             sepia(1) saturate(1) hue-rotate(183deg) brightness(1);
 }
 
-.logo-img:hover {
+/**/
+a.svg {
+      position: relative;
+      display: block;
+}
+
+a.svg:hover {
+      position: relative;
+      display: block;
       filter:
             sepia(1) saturate(20) hue-rotate(183deg) brightness(0.65);
+}
+
+a.svg:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      
 }
 
 
@@ -311,7 +329,7 @@ p {
 }
 
 
-.footer{
+.footer {
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -319,25 +337,32 @@ p {
       background: linear-gradient(180deg, #fff, #d9d9d9d9);
 }
 
-.footer p{
+.footer p {
       font-size: 0.95rem;
 }
 
-.social{
+.social {
       display: flex;
       align-items: center;
       column-gap: 1rem;
 }
 
-.social .bx{
+.social .bx {
       font-size: 1.5rem;
-      color:#2d556f;
+      color: #2d556f;
 }
 
-.social .bx:hover{
+.social .bx:hover {
       color: #2c9c60;
       transition: 0.3s all linear;
 }
+
+
+
+
+
+
+
 /*palette
 #353535 rgb(53, 53, 53) color jet dark grey
 
