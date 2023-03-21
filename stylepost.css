@@ -1,7 +1,14 @@
+.home{
+      height: 350px;
+}
+
 .post-header{
       width: 100%;
       height: 500px;
-      background-color: red;
+      margin-top: -300px;
+      z-index: 1;
+      /* background-color: red;
+      /*background-color: red;*/
 }
 
 .post-container{
@@ -18,14 +25,14 @@
 }
 
 .back-home{
-      color: blue;
+      color: #2971a1;
       font-size: 0.9rem;
 }
 
-.header-ttitle{
+.header-title{   
       width: 90%;
       font-size: 2.6rem;
-      color: blueviolet;
+      color: #d9d9d9;
       text-align: center;
       margin-bottom: 1rem;
 }
