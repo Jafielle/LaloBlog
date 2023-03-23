@@ -68,3 +68,14 @@
       margin: 1rem 0;
       text-align: justify;
 }
+
+.share{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 1rem;
+}
+
+.share-title{
+      font-size: 1.1rem;
+}

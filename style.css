@@ -92,7 +92,7 @@ a.svg:after {
       right: 0;
       bottom: 0;
       left: 0;
-      
+
 }
 
 
@@ -198,7 +198,7 @@ p {
 }
 
 .posts .expand {
-      width: 25em;
+      width: 25rem;
       margin: 1em;
 }
 
@@ -358,23 +358,28 @@ p {
 }
 
 
+/*Responsive*/
 
+@media(max-width: 1340px) {
+      .posts {
+            grid-template-columns: 1fr 1fr; 
+      }
+}
 
+@media(max-width: 1060px) {
+      .posts {
 
+      }
+}
 
+@media(max-width: 890px) {}
 
-/*palette
-#353535 rgb(53, 53, 53) color jet dark grey
-
-427d69 rgb(66, 125, 105) green color
-
-white
-
-d9d9d9  rgb(217, 217, 217) platinium a grey
-
-2d556f rgb(45, 85, 111) YInMn Blue  a dark blue
-
-https://coolors.co/353535-427d69-ffffff-d9d9d9-2d556f
-
-1421  1813
+/*
+for responsive
+Index
++change post display
++post filter
++nav-bar
++profile
++footer
 */
