@@ -131,7 +131,7 @@ h3 {
 .home {
       display: grid;
       grid-template-rows: 13rem;
-      justify-content: center;
+      justify-items: center;
       align-items: center;
       text-align: center;
       margin-top: 1.5em;
@@ -180,8 +180,10 @@ p {
       background-repeat: no-repeat;
       background-size: cover;
       display: grid;
-      /*grid-template-columns: repeat(auto-fit, minmax(25%, auto));*/
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(25%, auto));
+      /*grid-template-columns: 1fr 1fr 1fr;*/
+      grid-template-rows: auto;
+      justify-items: center;
       justify-content: center;
       gap: 2rem;
       margin: 1.5rem 5rem;
@@ -195,10 +197,11 @@ p {
       /**/
       padding: 15px;
       border-radius: 0.5rem;
+      width: 99.5%;
 }
 
 .posts .expand {
-      width: 25rem;
+      width: 25em;
       margin: 1em;
 }
 
@@ -255,9 +258,8 @@ p {
       text-overflow: ellipsis;
       overflow: hidden;
       white-space: nowrap;
-      width: 380px;
+      max-width: 100%;
       /*find alt*/
-
 }
 
 .profile-art {
@@ -360,19 +362,17 @@ p {
 
 /*Responsive*/
 
-@media(max-width: 1340px) {
-      .posts {
-            grid-template-columns: 1fr 1fr; 
-      }
-}
-
 @media(max-width: 1060px) {
       .posts {
-
+            grid-template-columns: repeat(auto-fit, minmax(45%, auto)); 
       }
 }
 
-@media(max-width: 890px) {}
+@media(max-width: 890px) {
+      .posts {
+            grid-template-columns: repeat(auto-fit, minmax(80%, auto)); 
+      }
+}
 
 /*
 for responsive
