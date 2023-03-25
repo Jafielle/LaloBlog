@@ -30,7 +30,7 @@ function filterPost(e) {
       post.forEach(div => {
 
             div.classList.remove('hide');
-            div.classList.add('expand');
+            //div.classList.add('expand');
 
             //Get data from data attributes
             //...post type data
@@ -42,7 +42,7 @@ function filterPost(e) {
 
             if (imgType !== btnType) {
                   //Hide the image
-                  div.classList.remove('expand');
+              //    div.classList.remove('expand');
                   div.classList.add('hide');
             }
       })
@@ -56,7 +56,7 @@ FilterBtns[0].addEventListener('click', (e) => {
       post.forEach(div => {
             //Expandig all posts
             div.classList.remove('hide');
-            div.classList.add('expand');
+    //        div.classList.add('expand');
       })
 })
 

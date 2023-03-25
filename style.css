@@ -200,10 +200,12 @@ p {
       width: 99.5%;
 }
 
+/*
 .posts .expand {
-      width: 25em;
-      margin: 1em;
+      width: 25%;
+      /*margin: 1em;
 }
+*/
 
 .posts .hide {
       display: none;
@@ -364,15 +366,31 @@ p {
 
 @media(max-width: 1060px) {
       .posts {
-            grid-template-columns: repeat(auto-fit, minmax(45%, auto)); 
+            grid-template-columns: repeat(auto-fit, minmax(45%, auto));
+            margin: 1.5rem 2.5rem;
       }
 }
 
 @media(max-width: 890px) {
       .posts {
-            grid-template-columns: repeat(auto-fit, minmax(80%, auto)); 
+            margin: 1.5rem 1rem;
+            gap: 1rem;
       }
+
+      /*Hacer las imagenes mas pequeñas, menos altas*/
 }
+
+@media(max-width: 600px) {
+      .posts {
+            grid-template-columns: repeat(auto-fit, minmax(80%, auto));
+            gap: 2rem;
+      }
+      /*El titulo hacerlo mas pequeño*/
+}
+
+/* 280px en el galaxy fold es en que mas se descuadra... Empieza por el 318 aprox*/
+
+
 
 /*
 for responsive
