@@ -454,6 +454,15 @@ p {
       }
 
       /*El titulo hacerlo mas pequeño*/
+
+
+      .footer {
+            padding: 20px 0;
+      }
+
+      .footer p {
+            font-size: 0.9rem;
+      }
 }
 
 @media(max-width: 400px) {
@@ -514,6 +523,14 @@ p {
 
       .content-art {
             font-size: 0.9rem;
+      }
+
+      .footer {
+            padding: 10px 0;
+      }
+
+      .footer p {
+            font-size: 0.75rem;
       }
 }
 
