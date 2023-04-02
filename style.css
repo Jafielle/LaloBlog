@@ -99,7 +99,6 @@ a.svg:after {
 
 }
 
-
 .login {
       padding: 8px 15px;
       font-weight: 500;
@@ -404,6 +403,20 @@ p {
 }
 
 @media(max-width: 600px) {
+      nav {
+            padding: 0.5rem 1rem;
+      }
+      
+      .logo {
+            font-size: 1.3rem;
+      }
+      
+      .logo-img {
+            width: 80px;
+            height: 90px;
+            margin-bottom: -30px;
+      }
+
       .posts {
             grid-template-columns: repeat(auto-fit, minmax(80%, auto));
             gap: 2rem;
@@ -466,6 +479,21 @@ p {
 }
 
 @media(max-width: 400px) {
+      
+      .logo {
+            font-size: 1.2rem;
+      }
+      
+      .logo-img {
+            width: 70px;
+            height: 80px;
+            margin-bottom: -30px;
+      }
+      
+      .login {
+            padding: 5px 10px;
+      }
+      
       .posts {
             grid-template-columns: repeat(auto-fit, minmax(80%, auto));
             gap: 2rem;
