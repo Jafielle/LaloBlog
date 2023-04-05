@@ -422,6 +422,10 @@ p {
             gap: 2rem;
       }
 
+      .post-img {
+            height: 150px;
+      }
+
       h1 {
             font-size: 2.5rem;
       }
@@ -480,6 +484,10 @@ p {
 
 @media(max-width: 400px) {
       
+      .post-img {
+            height: 120px;
+      }
+
       .logo {
             font-size: 1.2rem;
       }
@@ -563,6 +571,10 @@ p {
 }
 
 @media(max-width: 320px) {
+
+      .post-img {
+            height: 100px;
+      }
 
       .profile-art {
             margin: 1.5rem 1rem;
