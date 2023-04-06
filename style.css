@@ -45,7 +45,8 @@ nav {
       align-items: center;
       justify-content: space-between;
       padding: 0.5rem 1rem;
-      background-color: #353535;
+      background-color: transparent;
+      /*background-color: #353535;*/
 }
 
 nav.shadow {
@@ -53,6 +54,7 @@ nav.shadow {
       box-shadow: 10px 12px 14px hsl(0 4% 14% / 10%);
       transition: 0.3s;
 }
+
 
 .logo {
       font-size: 1.5rem;
@@ -137,7 +139,7 @@ h3 {
       justify-items: center;
       align-items: center;
       text-align: center;
-      margin-top: 1.5em;
+      margin-top: 0em;
       padding: 2rem 0 2rem;
 }
 
@@ -511,8 +513,7 @@ p {
 
       .home {
             grid-template-rows: 7rem;
-            margin-top: 5em;
-            padding: 2rem 0 1rem;
+            padding: 3.5rem 0 1rem;
             width: 100%;
       }
 
@@ -571,6 +572,10 @@ p {
 }
 
 @media(max-width: 320px) {
+      
+      .home {
+            padding: 4.5rem 0 1rem;
+      }
 
       .post-img {
             height: 100px;
