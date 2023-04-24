@@ -10,7 +10,7 @@ font-family: 'Roboto', sans-serif; */
       /**/
       box-sizing: border-box;
       /**/
-      color: #353535;
+      color: #353535; /*If I want the share post btns grey scale leave color here. If I want the colored,chage this line to body*/
 }
 
 body {

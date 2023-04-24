@@ -17,8 +17,15 @@
       <!--boxicons-->
       <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+      <!--Icon on browser's bar-->
       <link rel="icon" href="img\lalo-contorno-cara-y-corbata3.png"
-      type="image/x-icon">
+            type="image/x-icon">
+
+<!--this is for the share button functionality-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+            integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -185,14 +192,23 @@
                   <div class="share post-container">
                         <span class="share-title">Comparte este artículo</span>
                         <div class="social">
-                              <a href="#" class="bx bxl-linkedin-square linkedin-share-btn" target="_blank"></a>
-                              <a href="#" class="bx bxs-envelope gmail-share-btn" target="_blank"></a>
-                              <a href="#" class="bx bxl-facebook facebook-share-btn" target="_blank"></a>
-                              <a href="https://twitter.com/share?url=<\post-page.html>&text=<¿Sabes/lo/que/comes?>"
-                                    class="bx bxl-twitter twitter=share-btn" target="_blank"></a>
+                              <a class="facebook share-icon" id="facebook" target="blank"><i class="fab fa-facebook"></i></a>
+                              <!-- twitter -->
+                              <a class="twitter share-icon" target="blank"><i class="fab fa-twitter"></i></a>
+                              <!-- linkedin -->
+                              <a class="linkedin share-icon" target="blank"><i class="fab fa-linkedin"></i></a>
+                              <!-- reddit -->
+                              <a class="reddit share-icon" target="blank"><i class="fab fa-reddit"></i></a>
+                              <!-- whatsapp -->
+                              <a class="whatsapp share-icon" target="blank"><i class="fab fa-whatsapp"></i></a>
+                              <!-- telegram -->
+                              <a class="telegram share-icon" target="blank"><i class="fab fa-telegram"></i></a>
+                              </div>
                         </div>
+
                   </div>
             </div>
+
             <!--Make it smaller whe srolll down-->
             <article class="profile-art">
                   <img src="img\LEGG1.png" alt="" srcset="" class="img-art">
