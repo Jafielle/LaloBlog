@@ -82,7 +82,7 @@ window.addEventListener('scroll', () => {
                   }
             });*/
 
-const demoDiv = document.querySelector("#profile");
+const profileArticle = document.querySelector("#profile");
 const isInViewport = function (elem, offset) {
       const bounding = elem.getBoundingClientRect();
       return (
@@ -94,10 +94,10 @@ const isInViewport = function (elem, offset) {
 };
 
 window.addEventListener('scroll', function () {
-      if (isInViewport(demoDiv, 100)) {
-            demoDiv.classList.add('scale-up');
+      if (isInViewport(profileArticle, 60)) {
+            profileArticle.classList.add('scale-up');
       } else {
-            demoDiv.classList.remove('scale-up');
+            profileArticle.classList.remove('scale-up');
       }
 });
 

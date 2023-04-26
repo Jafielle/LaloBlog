@@ -281,14 +281,15 @@ p {
 
       gap: 0px;
       /*height: 100%;*/
-      background:transparent;
+      background: transparent;
 
       justify-content: center;
       align-items: center;
 
 
       transform: scale(0.5);
-      transition: transform 0.5s ease-in-out;
+      transform-origin: 100% 0%;
+      transition: transform 0.55s ease-in-out;
 
 }
 
@@ -409,6 +410,12 @@ p {
       .profile-art {
             margin: 1.5rem 1rem;
             padding: 1rem 2rem;
+            transform: scale(0.7);
+      }
+
+      .scale-up {
+            transform: scale(1);
+            background: linear-gradient(150deg, #d9d9d913, #2c9c603a, #2971a127);
       }
 
       /*Hacer las imagenes mas pequeñas, menos altas*/
@@ -444,10 +451,16 @@ p {
 
       .profile-art {
             margin: 1.5rem 1rem;
-            padding: 1rem 2rem;
+            padding: 1rem 3rem 1rem;
             justify-content: center;
             grid-template-rows: 1fr 0.5fr 2fr;
             grid-template-columns: 1fr 0.5fr 1fr;
+            transform: scale(0.8);
+      }
+
+      .scale-up {
+            transform: scale(1);
+            background: linear-gradient(150deg, #d9d9d913, #2c9c603a, #2971a127);
       }
 
 
@@ -492,6 +505,20 @@ p {
       .footer p {
             font-size: 0.9rem;
       }
+}
+
+@media(max-width: 500px) {
+
+      .profile-art {
+            margin: 1.2rem 1rem 1rem 0rem;
+            transform: scale(0.9);
+      }
+
+      .scale-up {
+            transform: scale(1);
+            background: linear-gradient(150deg, #d9d9d913, #2c9c603a, #2971a127);
+      }
+
 }
 
 @media(max-width: 400px) {
@@ -599,7 +626,10 @@ p {
             grid-template-columns: 1fr 1fr 1fr;
             max-height: max-content;
             padding: 1rem;
+            transform: scale(1);
+            
       }
+      
 
       .title-art {
             font-size: 1rem;
