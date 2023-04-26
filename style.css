@@ -10,7 +10,8 @@ font-family: 'Roboto', sans-serif; */
       /**/
       box-sizing: border-box;
       /**/
-      color: #353535; /*If I want the share post btns grey scale leave color here. If I want the colored,chage this line to body*/
+      color: #353535;
+      /*If I want the share post btns grey scale leave color here. If I want the colored,chage this line to body*/
 }
 
 body {
@@ -279,12 +280,21 @@ p {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
       gap: 0px;
-      height: 100%;
-      background: linear-gradient(150deg, #d9d9d913, #2c9c603a, #2971a127);
+      /*height: 100%;*/
+      background:transparent;
 
       justify-content: center;
       align-items: center;
 
+
+      transform: scale(0.5);
+      transition: transform 0.5s ease-in-out;
+
+}
+
+.scale-up {
+      transform: scale(1);
+      background: linear-gradient(150deg, #d9d9d913, #2c9c603a, #2971a127);
 }
 
 .img-art {
@@ -408,11 +418,11 @@ p {
       nav {
             padding: 0.5rem 1rem;
       }
-      
+
       .logo {
             font-size: 1.3rem;
       }
-      
+
       .logo-img {
             width: 80px;
             height: 90px;
@@ -485,7 +495,7 @@ p {
 }
 
 @media(max-width: 400px) {
-      
+
       .post-img {
             height: 120px;
       }
@@ -493,17 +503,17 @@ p {
       .logo {
             font-size: 1.2rem;
       }
-      
+
       .logo-img {
             width: 70px;
             height: 80px;
             margin-bottom: -30px;
       }
-      
+
       .login {
             padding: 5px 10px;
       }
-      
+
       .posts {
             grid-template-columns: repeat(auto-fit, minmax(80%, auto));
             gap: 2rem;
@@ -572,7 +582,7 @@ p {
 }
 
 @media(max-width: 320px) {
-      
+
       .home {
             padding: 4.5rem 0 1rem;
       }

@@ -42,7 +42,7 @@ function filterPost(e) {
 
             if (imgType !== btnType) {
                   //Hide the image
-              //    div.classList.remove('expand');
+                  //    div.classList.remove('expand');
                   div.classList.add('hide');
             }
       })
@@ -56,7 +56,7 @@ FilterBtns[0].addEventListener('click', (e) => {
       post.forEach(div => {
             //Expandig all posts
             div.classList.remove('hide');
-    //        div.classList.add('expand');
+            //        div.classList.add('expand');
       })
 })
 
@@ -66,6 +66,44 @@ let nav = document.querySelector('nav')
 
 
 window.addEventListener('scroll', () => {
-      
+
       nav.classList.toggle('shadow', window.scrollY > 0);
 })
+
+
+//Profile article grow when scroll
+
+/*const demoDiv = document.querySelector("#profile");
+            window.addEventListener('scroll', function () {
+                  if (window.scrollY * 0.0008 > 1 || window.scrollY * 0.0008 < 0.7) {
+                        return;
+                  } else {
+                        demoDiv.classList.add('scale-up'); /* Changed this line 
+                  }
+            });*/
+
+const demoDiv = document.querySelector("#profile");
+const isInViewport = function (elem, offset) {
+      const bounding = elem.getBoundingClientRect();
+      return (
+            bounding.top >= -offset &&
+            bounding.left >= 0 &&
+            bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + offset &&
+            bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+};
+
+window.addEventListener('scroll', function () {
+      if (isInViewport(demoDiv, 100)) {
+            demoDiv.classList.add('scale-up');
+      } else {
+            demoDiv.classList.remove('scale-up');
+      }
+});
+
+
+
+
+
+
+
