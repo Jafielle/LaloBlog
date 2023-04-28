@@ -48,6 +48,8 @@ nav {
       padding: 0.5rem 1rem;
       background-color: transparent;
       /*background-color: #353535;*/
+      transition: transform 0.6s ease-in-out, background-color 0.3s ease-in-out;
+      background-color: transparent;
 }
 
 nav.shadow {
@@ -285,17 +287,18 @@ p {
 
       justify-content: center;
       align-items: center;
-
+      background: linear-gradient(150deg, #d9d9d913, #2c9c603a, #2971a127);
 
       transform: scale(0.5);
       transform-origin: 100% 0%;
-      transition: transform 0.55s ease-in-out;
+      transition: transform 0.6s ease-in-out, opacity 0.5s ease-in-out;
+      opacity: 0.6;
 
 }
 
 .scale-up {
       transform: scale(1);
-      background: linear-gradient(150deg, #d9d9d913, #2c9c603a, #2971a127);
+      opacity: 1;
 }
 
 .img-art {
@@ -627,9 +630,9 @@ p {
             max-height: max-content;
             padding: 1rem;
             transform: scale(1);
-            
+
       }
-      
+
 
       .title-art {
             font-size: 1rem;
