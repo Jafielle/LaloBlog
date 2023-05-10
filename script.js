@@ -29,7 +29,10 @@ function filterPost(e) {
       //Looping through all posts
       post.forEach(div => {
 
-            div.classList.remove('hide');
+            div.classList.remove('hide-transition');/**/
+            setTimeout(() => {
+                  div.classList.remove('hide');
+            }, 250); // Remove hide-transition class 5 seconds (5000ms) after the hide class
             //div.classList.add('expand');
 
             //Get data from data attributes
@@ -42,8 +45,15 @@ function filterPost(e) {
 
             if (imgType !== btnType) {
                   //Hide the image
-                  //    div.classList.remove('expand');
-                  div.classList.add('hide');
+                  div.classList.add('hide-transition');
+                  setTimeout(() => {
+                        div.classList.add('hide');
+                  }, 250);
+                  setTimeout(() => {
+                        div.classList.remove('hide-transition');
+                  }, 250); // Remove hide-transition class 5 seconds (5000ms) after the hide class
+                  //div.classList.add('expand');
+                  
             }
       })
 }
@@ -60,6 +70,41 @@ FilterBtns[0].addEventListener('click', (e) => {
       })
 })
 
+/*
+const postBox = document.querySelector('.post-box');
+
+// Add the hide class to the post box
+postBox.classList.add('hide');
+
+// Wait for the next frame to ensure the hide class is applied
+requestAnimationFrame(() => {
+      // Add the hide-transition class to the post box
+      postBox.classList.add('hide-transition');
+});
+
+// Remove the hide class from the post box after a delay
+setTimeout(() => {
+      postBox.classList.remove('hide');
+}, 1000);
+
+
+// Remove the hide class from the post box
+postBox.classList.remove('hide');
+
+// Wait for the transition to complete
+setTimeout(() => {
+  // Remove the hide-transition class from the post box
+  postBox.classList.remove('hide-transition');
+}, 300);
+
+ */
+
+
+
+
+
+
+
 
 //Nav Change on Scroll
 let nav = document.querySelector('nav')
@@ -70,36 +115,6 @@ window.addEventListener('scroll', () => {
       nav.classList.toggle('shadow', window.scrollY > 0);
 })
 
-
-//Profile article grow when scroll
-
-/*const demoDiv = document.querySelector("#profile");
-            window.addEventListener('scroll', function () {
-                  if (window.scrollY * 0.0008 > 1 || window.scrollY * 0.0008 < 0.7) {
-                        return;
-                  } else {
-                        demoDiv.classList.add('scale-up'); /* Changed this line 
-                  }
-            });*/
-
-const profileArticle = document.querySelector("#profile");
-const isInViewport = function (elem, offset) {
-      const bounding = elem.getBoundingClientRect();
-      return (
-            bounding.top >= -offset &&
-            bounding.left >= 0 &&
-            bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + offset &&
-            bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
-      );
-};
-
-window.addEventListener('scroll', function () {
-      if (isInViewport(profileArticle, 60)) {
-            profileArticle.classList.add('scale-up');
-      } else {
-            profileArticle.classList.remove('scale-up');
-      }
-});
 
 
 

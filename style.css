@@ -166,6 +166,7 @@ h3 {
       border: none;
       background-color: transparent;
 }
+
 .filter-item:hover {
       color: #2971a1;
 }
@@ -212,12 +213,13 @@ p {
       width: 99.5%;
 }
 
-/*
-.posts .expand {
-      width: 25%;
-      /*margin: 1em;
+/**/
+.posts .hide-transition{
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s ease, visibility 1s ease;
 }
-*/
+
 
 .posts .hide {
       display: none;
